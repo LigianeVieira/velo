@@ -1,5 +1,7 @@
 import {test, expect} from "@playwright/test";
 
+/// AAA - Arrange, Act, Assert
+
 test('dev consultar um pedido aprovado', async ({ page }) => {
 
     // Arrange
@@ -18,5 +20,5 @@ test('dev consultar um pedido aprovado', async ({ page }) => {
     await expect(page.getByTestId('order-result-id')).toContainText('VLO-R083QG')
 
     await expect(page.getByTestId('order-result-status')).toBeVisible()
-    await expect(page.getByTestId('order-result-status')).toContainText('APROVADO')
+    await expect(page.getByTestId('order-result-status')).toContainText('APROVADOumj,k')
 })
